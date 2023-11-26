@@ -4,15 +4,20 @@
 		<head>
 			<title>formularz-Tuszkiewicz</title>
 		</head>
+			<body style="background-color: #AAE0EA;font-size: 11;font-family: sans-serif;">
+            
 			tutaj będzie formularz<br>
 			<h1 style="text-align: center;font-family: arial;">Formularz filmowy</h1>
+
+            <form>
+            <table style="font-family: arial;"
 			<p style="text-size-adjust: 15px;font-family: arial;">Dane osobowe:</p>
 			Imię: <input name="imie" size="21"><br>
 			Nazwisko: <input name="nazwisko" size="21"><br><br>
 
 			
 			Zaznacz swój przedział wiekowy:<br>
-			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 0-18
+			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś" checked> 0-18
 			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 19-30
 	        <input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 31-50
 			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 51-99+<br>
@@ -35,14 +40,75 @@
 			<input type="checkbox" name="urzadzenie" value="ur"> telewizor<br>
 			<input type="checkbox" name="urzadzenie" value="ur"> projektor<br>
 
-			Gdzie oglądasz filmy:
+			Gdzie oglądasz filmy:<br>
 			<input type="checkbox" name="miejsce" value="mc"> kino<br>
 			<input type="checkbox" name="miejsce" value="mc"> dom<br>
 			<input type="checkbox" name="miejsce" value="mc"> gdzieś indziej<br>
 
-			
+            Do jakich kin chodzisz:<br>
+            <input type="checkbox" name="kino" value="kn"checked> multikino
+            <input type="checkbox" name="kino" value="kn"> helios
+            <input type="checkbox" name="kino" value="kn"> cinemacity
+            <input type="checkbox" name="kino" value="kn"> c-kino 
+            <input type="checkbox" name="kino" value="kn"> inne<br>
+
+            Ulubiony aktor:<br>
+            <input type="text" placeholder="Brad Pitt" name="aktor" size="21"><br>
+
+            Nazwa konta na filmwebie:<br>
+            <input name="konto" size="21"><br>
+
+            Hasło:<br>
+            <input type="password" name="haslo" size="21"><br>
+
+            Ulubiony gatunek filmowy:<br>
+            <select>
+                <option value="akcja" >akcja</option>
+                <option value="dramat">dramat</option>
+                <option value="science-fiction">science-fiction</option>
+                <option value="fantasy">fantasy</option>
+                <option value="horror" selected>horror</option>
+            </select>
+            <br>
+
+            Ulubiony superbohater z filmu:<br>
+            <select>
+                <option value="spiderman">spiderman</option>
+                <option value="batman">batman</option>
+                <option value="superman">superman</option>
+            </select>
+            <br>
+
+            W jakim języku oglądasz filmy:<br>
+            <select>
+                <option value="polski" >polski</option>
+                <option value="angielski" selected>angielski </option>
+                <option value="ukraiński">ukraiński </option>
+                <option value="inny">inny</option>
+            </select>
+            <br>
+
+            Napisz recenzje swojego ulubionego filmu:<br>
+           
+
+            <input type="submit" value="wyślij" style="height:60px; width:500px">
+            <input type="reset" value="czyść" style="height:60px; width:500px"><br>
+            <button onclick="alert('numer telefonu: 123 456 789, email: kinomaniak@email.com ')" style="height:60px;width:500px">kontakt</button>
+            <button onclick="alert('autorem formularza jest Jan Tuszkiewicz')" style="height:60px;width:500px">autor</button>
+
+
+
+
+           
+            
+    
+
+
+
+            </table>
+        </form>
 			<br>
 			<A HREF="index.html"> wróć </A>
-		<body>
+		
 		</body>
 	</html>

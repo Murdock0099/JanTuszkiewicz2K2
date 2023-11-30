@@ -4,64 +4,77 @@
 		<head>
 			<title>formularz-Tuszkiewicz</title>
 		</head>
-			<body style="background-color: #AAE0EA;font-size: 11;font-family: sans-serif;">
+			<body style="background-color: #AAE0EA;">
             
 			tutaj będzie formularz<br>
 			<h1 style="text-align: center;font-family: arial;">Formularz filmowy</h1>
 
-            <form>
-            <table style="font-family: arial;"
-			<p style="text-size-adjust: 15px;font-family: arial;">Dane osobowe:</p>
-			Imię: <input name="imie" size="21"><br>
-			Nazwisko: <input name="nazwisko" size="21"><br><br>
+            <form enctype="text/plain" action="mailto:jantuszkiewicz71@gmail.com" subject="formularz_dane" method="Post">
 
-			
-			Zaznacz swój przedział wiekowy:<br>
-			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś" checked> 0-18
-			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 19-30
-	        <input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 31-50
-			<input type="radio" name="wiek" value="Ilość wiosen które przeżyłeś"> 51-99+<br>
+            <table style="font-family: sans-serif;font-size: 140%;">
+            <tr>
+		        <td><p style="text-size-adjust: 15px;font-family: arial;">Dane osobowe:</p>
+                Imię: <input name="imie" size="21"><br>
+                Nazwisko: <input name="nazwisko" size="21"><br><br>
+            </tr>
+
+			<tr>
+			<td style="vertical-align: top;">Zaznacz swój przedział"wiekowy:<br>
+			<input type="radio" name="wiek" value="0-18" checked> 0-18
+			<input type="radio" name="wiek" value="19-30"> 19-30
+	        <input type="radio" name="wiek" value="31-50"> 31-50
+			<input type="radio" name="wiek" value="51-99"> 51-99+<br>
+
+            Podaj swój wzrost:<br>
+			<input type="radio" name="wzrost" value="150"> &lsaquo;150<br>
+			<input type="radio" name="wzrost" value="151"> &rsaquo;150<br>
+			<input type="radio" name="wzrost" value="180"> &rsaquo;180<br>
+            
+
+            <td style="vertical-align: top;text-align: left;">Ile filmów oglądasz rocznie:<br>
+			<input type="radio" name="ilosćfilm" value="25"> &lsaquo;25<br>
+			<input type="radio" name="ilosćfilm" value="26"> &rsaquo;25<br>
+			<input type="radio" name="ilosćfilm" value="50"> &rsaquo;50<br>
+			<input type="radio" name="ilosćfilm" value="75"> &rsaquo;75<br>
+			<input type="radio" name="ilosćfilm" value="100"> &rsaquo;100<br>
+            </tr>
 				
-			Ile filmów oglądasz rocznie:<br>
-			<input type="radio" name="ilosćfilm" value="Ilość filmów"> &lsaquo;25<br>
-			<input type="radio" name="ilosćfilm" value="Ilość filmów"> &rsaquo;25<br>
-			<input type="radio" name="ilosćfilm" value="Ilość filmów"> &rsaquo;50<br>
-			<input type="radio" name="ilosćfilm" value="Ilość filmów"> &rsaquo;75<br>
-			<input type="radio" name="ilosćfilm" value="Ilość filmów"> &rsaquo;100<br>
+            <tr>
+            <td style="vertical-align: top;">Na czym oglądasz:<br>
+			<input type="checkbox" name="urzadzenie" value="komp"> komputer<br>
+			<input type="checkbox" name="urzadzenie" value="tel;"> telefon<br>
+			<input type="checkbox" name="urzadzenie" value="tv"> telewizor<br>
+			<input type="checkbox" name="urzadzenie" value="projektor"> projektor<br>
 
-			Podaj swój wzrost:<br>
-			<input type="radio" name="wzrost" value="wz"> &lsaquo;150<br>
-			<input type="radio" name="wzrost" value="wz"> &rsaquo;150<br>
-			<input type="radio" name="wzrost" value="wz"> &rsaquo;180<br>
+			<td style="vertical-align: top;text-align: left;">Gdzie oglądasz filmy:<br>
+			<input type="checkbox" name="miejsce" value="kino"> kino<br>
+			<input type="checkbox" name="miejsce" value="dom"> dom<br>
+			<input type="checkbox" name="miejsce" value="gi"> gdzieś indziej<br>
+            </tr>
 
-			Na czym oglądasz:<br>
-			<input type="checkbox" name="urzadzenie" value="ur"> komputer<br>
-			<input type="checkbox" name="urzadzenie" value="ur"> telefon<br>
-			<input type="checkbox" name="urzadzenie" value="ur"> telewizor<br>
-			<input type="checkbox" name="urzadzenie" value="ur"> projektor<br>
+            <tr>
+            <td style="vertical-align: top;">Do jakich kin chodzisz:<br>
+            <input type="checkbox" name="kino" value="multikino"checked> multikino
+            <input type="checkbox" name="kino" value="helios> helios
+            <input type="checkbox" name="kino" value="cc"> cinemacity
+            <input type="checkbox" name="kino" value="ck"> c-kino 
+            <input type="checkbox" name="kino" value="inne"> inne<br>
+            </tr>
 
-			Gdzie oglądasz filmy:<br>
-			<input type="checkbox" name="miejsce" value="mc"> kino<br>
-			<input type="checkbox" name="miejsce" value="mc"> dom<br>
-			<input type="checkbox" name="miejsce" value="mc"> gdzieś indziej<br>
+            <tr>
+            <td style="vertical-align: top;">Ulubiony aktor:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNazwa konta na filmwebie:&nbsp&nbspHasło:<br>
+            
+            <input type="text" placeholder="Brad Pitt" name="aktor" size="21">
 
-            Do jakich kin chodzisz:<br>
-            <input type="checkbox" name="kino" value="kn"checked> multikino
-            <input type="checkbox" name="kino" value="kn"> helios
-            <input type="checkbox" name="kino" value="kn"> cinemacity
-            <input type="checkbox" name="kino" value="kn"> c-kino 
-            <input type="checkbox" name="kino" value="kn"> inne<br>
+            &nbsp&nbsp&nbsp<input name="konto" size="21">
 
-            Ulubiony aktor:<br>
-            <input type="text" placeholder="Brad Pitt" name="aktor" size="21"><br>
-
-            Nazwa konta na filmwebie:<br>
-            <input name="konto" size="21"><br>
-
-            Hasło:<br>
-            <input type="password" name="haslo" size="21"><br>
-
-            Ulubiony gatunek filmowy:<br>
+            &nbsp&nbsp&nbsp<input type="password" name="haslo" size="21">
+            <br><br>
+            </tr>
+            
+            <tr>
+            <td>Ulubiony gatunek filmowy:<br>
             <select>
                 <option value="akcja" >akcja</option>
                 <option value="dramat">dramat</option>
@@ -69,7 +82,7 @@
                 <option value="fantasy">fantasy</option>
                 <option value="horror" selected>horror</option>
             </select>
-            <br>
+            <br><br><br><br><br><br>
 
             Ulubiony superbohater z filmu:<br>
             <select>
@@ -77,7 +90,7 @@
                 <option value="batman">batman</option>
                 <option value="superman">superman</option>
             </select>
-            <br>
+            <br><br><br><br>
 
             W jakim języku oglądasz filmy:<br>
             <select>
@@ -86,16 +99,20 @@
                 <option value="ukraiński">ukraiński </option>
                 <option value="inny">inny</option>
             </select>
-            <br>
+            <br><br><br><br><br><br>
+            
 
-            Napisz recenzje swojego ulubionego filmu:<br>
-           
+            <td style="vertical-align: top;">Napisz recenzje swojego ulubionego filmu:<br>
+            </tr>
 
-            <input type="submit" value="wyślij" style="height:60px; width:500px">
-            <input type="reset" value="czyść" style="height:60px; width:500px"><br>
-            <button onclick="alert('numer telefonu: 123 456 789, email: kinomaniak@email.com ')" style="height:60px;width:500px">kontakt</button>
-            <button onclick="alert('autorem formularza jest Jan Tuszkiewicz')" style="height:60px;width:500px">autor</button>
-
+            <tr>
+                <td style="text-align: center;"><input type="submit" value="wyślij" style="height:60px; width:500px">
+                <td style="text-align: center;"><input type="reset" value="czyść" style="height:60px; width:500px"><br>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><button onclick="alert('numer telefonu: 123 456 789, email: kinomaniak@email.com ')" style="height:60px;width:500px">kontakt</button>
+                <td style="text-align: center;"><button onclick="alert('autorem formularza jest Jan Tuszkiewicz')" style="height:60px;width:500px">autor</button>
+            </tr>
 
 
 
